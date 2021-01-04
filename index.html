@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Matías Delorenzi</title>
+    <link rel="stylesheet" href="/public/css/main.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+    <script src="https://kit.fontawesome.com/2abf76ab9b.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    
+    <div class="navigation">
+        <ul>
+            <li><a href="#">M | D</a></li>
+            <button onclick= changeLanguage() ><input id="flag" type="image" src= "/public/images/languages.png"></button>
+            <!--Spanis button
+            <button onclick= changeSpanish() ><input type="image" src="/public/images/es.png"></button>
+            -->
+            <li><a href="#"></a></li>
+            <li><a href="#"></a></li>
+            <li><a href="#" id="navbar1" >Inicio</a></li>
+            <li><a href="#" id="navbar2" >Sobre mi</a></li>
+            <li><a href="#" id="navbar3" >Proyectos</a></li>
+            <li><a href="#" id="navbar4" >Contacto</a></li>
+            
+           
+            
+        </ul>
+    </div>
+
+    <div class="section1" id="parallax">
+        <div>
+            <h1 id="section1Title" >Matías Delorenzi</h1>
+            <h2 id="section1Text" >Desarrollador web</h2>
+            <a href="#" id="section1Contact" >Contáctame</a>
+        </div>
+    </div>
+
+    <div class="section2">
+        <div>
+            <h1 id="aboutMeTitle">Sobre Mi</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam, neque, expedita sunt, minima omnis totam voluptatem eligendi fugit debitis eius at. Blanditiis corporis porro rem aliquid! Ab quaerat, deserunt placeat illo suscipit asperiores consequuntur, dolore aspernatur, dignissimos quis esse iusto error optio nemo consectetur! Alias impedit, molestias non ducimus enim repudiandae beatae similique debitis ex ut ad animi voluptate doloremque aliquam, laudantium delectus, incidunt dolorum fuga. Soluta cum ullam officiis, tempore est unde possimus ipsa. Maxime sequi, ea recusandae hic voluptatum incidunt quam atque maiores libero iure non qui error quasi asperiores fugit officiis quaerat ab cupiditate blanditiis consectetur. Culpa voluptatibus, reprehenderit ut doloremque eum aliquam ipsa minima laborum dicta cumque nobis, dolore possimus explicabo corporis excepturi atque. Ut, incidunt? Laborum aut ut incidunt distinctio. Accusantium distinctio aut deserunt a, nostrum mollitia, ullam commodi totam officia atque assumenda itaque quis consequatur nulla non ipsum dignissimos culpa ad consectetur reprehenderit quia suscipit. Esse cupiditate, quos vel animi ab soluta deleniti fuga odio sint iure, excepturi illo ad architecto quasi labore accusamus maiores! Quo, quae. Eveniet, odit voluptas optio inventore quos non dolore repudiandae sed qui aspernatur quam ipsa soluta ratione accusamus eos in obcaecati. Quae dolorem quia cupiditate eligendi aliquid corrupti.</p>
+            <img src="/public/images/andy.png" alt="">
+        </div>
+    </div>
+
+    <div class="section3" id="para2">
+        <h1 id="projectsTitle">Mis Proyectos</h1> 
+        <button class="project1">Project 1</button>
+        <button class="project2">Project 2</button>
+        <button class="project3">Project 3</button>
+        <a href="#" class="showMore" id="showMore">Mostrar más</a>     
+    </div>
+
+    <div class="section4">
+        <div>
+            <h1 id="contactTitle" class="contact-title">¿Como puedo ayudarle?</h1>
+            <h3 id="contactTimeResponse" class="contact-response">¿Tiene alguna pregunta o está interesado en trabajar conmigo? Por favor, complete el formulario a continuación y responderé en las próximas 24 horas.</h3>
+        </div>
+        <div></div>
+        <div class="contact-form">
+            <form id="contact-form" action="#" method="POST">
+                <input id="formName" name="name" type="text" class="form-control" placeholder="Nombre" required>
+                <br>
+                <input  id="formEmail" name="email" type="text" class="form-control" placeholder="E-Mail" required>
+                <br>
+                <textarea  id="formMessage" name="message" class="form-control" placeholder="Escriba su mensaje aquí..." rows="4" required></textarea>
+                <br>
+                <input class="formButton" id="formButton" type="button" value="ENVIAR" onclick="sendEmail()"/>
+            </form>
+        </div>
+        <br>
+        <div class="social-media">
+            <h1 class="social-title">Mis redes sociales</h1>
+            <br>
+            <ul class="social-list">
+                <li><a href="#"><i class="fab fa-linkedin-in fa-3x"></i></a></li>
+                <li><a href="#"><i class="fab fa-github fa-3x"></i></a></li>
+                <li><a href="#"><i class="fab fa-instagram fa-3x"></i></a></li>             
+                <li><a href="#"><i class="fab fa-facebook-f fa-3x"></i></a></li>
+                <li><a href="#"></a></li>
+            </ul>
+        </div>
+        
+        
+    </div>
+
+
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
+    <script src="/public/js/main.js"></script>
+    <script src="/public/js/language.js"></script>
+    <script src="/public/js/emailsender.js"></script>
+</body>
+</html>
