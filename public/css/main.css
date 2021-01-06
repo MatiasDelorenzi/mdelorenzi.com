@@ -17,7 +17,7 @@ button{
     display:flex;
     z-index: 1;
     width: 100%;
-    height: 55px;
+    height: 50px;
     line-height: 55px;
     background: rgba(83, 83, 83, 0.95);
     list-style-type:none;
@@ -84,7 +84,8 @@ button{
 
 .section1 div{
     display:block;
-    background: rgba(255, 255, 255, 0.7);
+    width: 70%;
+    background: rgba(255, 255, 255, 0);
     border-radius: 25px;
     padding: 13px 50px;
     margin-left: auto;
@@ -93,10 +94,13 @@ button{
 
 .section1 div h1{
     font-size: 50px;
-    text-shadow: 1px 1px 2px black;
+    color: white;
+    font: bolder;
+    text-shadow: 1px 1px 2px rgb(0, 0, 0);
     font-family: helvetica;
     text-align: center;
     padding-bottom: 25px;
+    margin-bottom: 10%;
 
 }
 
@@ -105,22 +109,41 @@ button{
     font-family: helvetica;
     text-align: center;
     padding-bottom: 25px;
+    color: rgb(99, 99, 99);
 }
 
-.section1 div a{
-    text-shadow: 0.2px 0.2px 0.4px black;
+
+
+.knowMoreAboutMe{
+    display:flex;
+    margin-top: 10px;
+    width: 40%;
+    font-size: 20px;
+    text-shadow: 2px 2px 4px black;
     font-family: helvetica;
-    margin-left: 40%;
+    margin-left: 30%;
     justify-content: center;
-    background-color:rgba(83, 83,83,0.95);
     color: white;
     text-decoration: none;
-    border: 8px solid rgba(83, 83,83,0.95);
+    border: 20px;
     border-radius: 16px;
+
 }
 
+.knowMoreAboutMe:hover{
+    color: white;
+    text-shadow: 1px 1px 2px white;
+}
+
+
+.logo{
+    margin-top: 0;
+    margin-bottom: 9%;
+}
+
+
 div:nth-child(2){
-    background-image: url(../images/background1.png);
+    background-image: url(../images/backgroundtest.png);
     background-size: cover;
 }
 
@@ -140,8 +163,8 @@ div:nth-child(2){
 .section2 div{
     display:block;
     margin: 1%;
-    margin-left: 15%;
-    margin-right: 15%;    
+    margin-left: 10%;
+    margin-right: 10%;    
 }
 
 .section2 h1{
@@ -149,17 +172,28 @@ div:nth-child(2){
     margin-bottom: 50px;
 }
 
-.section2 p{
-    font-size: 25px ;
-    width: 75%;
+.section2 .paragraph{
+    position: relative;
+    margin-left: 0;
+    margin-top: 1%;
+    font-size: 20px ;
+    width: 70%;
     float:left; 
-    text-justify: auto;
+}
+
+.section2 .paragraph p{
+    
+    text-justify: newspaper;
+    width: 100%;
+    float: left;
 }
 
 .section2 img{
+    padding-top: 0;
+    margin-top: 0;
     float:right;
     width:20%;
-    height: 5%;
+    height: 350px;
      
 }
 
@@ -214,13 +248,20 @@ div:nth-child(2){
     justify-content: center;
     background-color:#828a87;
     color: white;
-    font-size: 190%;
+    font-size: 120%;
     text-decoration: none;
     border: 8px solid #828a87;
     border-radius: 16px;
     text-shadow: 1px 1px 2px black;
     box-shadow: 1px 1px 2px black;
 
+}
+
+.showMore:hover{
+    color: white;
+    background-color: #4c5250;
+    border-color:  #4c5250;
+    cursor: pointer;
 }
 
 .section3 h1{  
@@ -238,7 +279,7 @@ div:nth-child(2){
 }
 
 div:nth-child(4){
-    background-image: url(../images/background2.jpg);
+    background-image: url(../images/projectsBackground.png);
     background-size: cover;
 }
 
@@ -267,6 +308,7 @@ div:nth-child(4){
 
 form{
     margin: 20%;
+    margin-bottom: 5%;
     margin-top: 5%;
 }
 
@@ -291,77 +333,128 @@ form .formButton:hover{
     cursor: pointer;
 }
 
-.social-title{
+.social-media div{
+    align-items: center;
+    justify-content: center;
     width: 100%;
-    margin-left: auto;
-    margin-right: auto;
+}
+
+.social-media div h1{
     text-align: center;
-    font-size: 50px;
 }
 
-.social-media{
-    margin: 0;
-    padding: 0;
-    justify-content: center;
-    position: relative;
-    align-items: center;
-}
 
-.social-list{
-    margin: 0;
-    padding: 0;
-    display:flex;
-    width: 100%;
-    margin-left: 28%;
-    margin-right: auto;
-    align-items: center;
-    align-items: center;
+/*SOCIAL MEDIA*/
 
-}
-
-.social-list li{
-    list-style: none;
-    margin: 0px 5px;
-    margin-left: 50px;
-    margin-right: 90px;
-    margin-top: 60px;
-}
-
-.social-list li a{
-    width: 130px;
-    height: 130px;
-    position: relative;
-    display:flex;
-    justify-content: center;
-    border-radius: 50%;
-    text-decoration: none;
-    color: #000;
-    transition: 0.5s;
-}
-
-.social-list li a:before{
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
+.social-media .social-menu ul{
+    position:relative;
+   
     right: 0;
-    bottom: 0;
-    padding: 20px;
-    background: #000;
+    padding: 0;
+    margin: 0;
+    margin-top: 7%;
+    margin-left: 53%;
+    padding-right: 0;
+    margin-right: 0;
+    padding-bottom: 3%;
+    transform: translate(-50%, -50%);
+    display: flex;
+
+}
+
+.social-menu ul li{
+    list-style: none;
+    margin: 0 40px;
+
+}
+
+.social-menu ul li .fa{
+    font-size: 30px;
+    line-height: 60px;
+    transition: 0.6s;
+    color: #fff;
+}
+
+.social-menu ul li .fa:hover{
+    color: #fff;
+
+}
+
+.social-menu ul li a{
+    position: relative;
+    display:block;
+    width:60px;
+    height: 60px;
     border-radius: 50%;
-    z-index: -1;
-    transform: scale(0);
-    transition: 0.5s;
-
-
+    background-color: #828a87;
+    text-align: center;
+    transition: 0.6s;
+    box-shadow: 0 5px 4px rgba(0, 0, 0, 0.5);    
 }
 
-.social-list li a:hover:before{
-    transform: scale(1);
+.social-menu ul li a:hover{
+    transform: translate(0, -10px);
+}
+
+/*LINKEDIN*/
+.social-menu ul li:nth-child(1) a:hover{
+    background-color: #0077B5;
+}
+
+/*GITHUB*/
+.social-menu ul li:nth-child(2) a:hover{
+    background-color: #171515;
+}
+
+/*INSTAGRAM*/
+.social-menu ul li:nth-child(3) a:hover{
+    background-color: #e4405f;
+}
+
+/*DOWNLOAD*/
+.social-menu ul li:nth-child(4) a:hover{
+    background-color: #0084ff;
 }
 
 
+/*================================================================*/
+/*FOOTER*/
 
+.footer{
+    float: bottom;
+    left:0;
+    bottom:0;
+    width: 100%;
+    background-color: #828a87;
+    height: 18px;
+}
+
+.footer p{
+    text-align: center;
+    background-color: #828a87;
+    color: rgb(189, 189, 189);
+}
+
+
+/*==================================================*/
+/*Mail and whatsapp*/
+
+.extraInfo{
+    margin: 0;
+    width: 100%;
+    align-items: center;
+    margin-bottom: 4%;
+}
+
+.extraInfo h3{
+    margin: 0;
+    text-align: center;
+    width: 100%;
+    font-size: 20px;
+    margin-bottom: 1%;
+    font:bold;
+
+}
 
 
 

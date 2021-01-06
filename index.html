@@ -12,35 +12,47 @@
     
     <div class="navigation">
         <ul>
-            <li><a href="#">M | D</a></li>
+            <li><a href="#social-media">M | D</a></li>
             <button onclick= changeLanguage() ><input id="flag" type="image" src= "/public/images/languages.png"></button>
             <!--Spanis button
             <button onclick= changeSpanish() ><input type="image" src="/public/images/es.png"></button>
             -->
             <li><a href="#"></a></li>
             <li><a href="#"></a></li>
-            <li><a href="#" id="navbar1" >Inicio</a></li>
-            <li><a href="#" id="navbar2" >Sobre mi</a></li>
-            <li><a href="#" id="navbar3" >Proyectos</a></li>
-            <li><a href="#" id="navbar4" >Contacto</a></li>
-            
-           
+            <li><a href="#parallax" id="navbar1" >Inicio</a></li>
+            <li><a href="#section2" id="navbar2" >Sobre mi</a></li>
+            <li><a href="#para2" id="navbar3" >Proyectos</a></li>
+            <li><a href="#section4" id="navbar4" >Contacto</a></li>          
             
         </ul>
     </div>
 
     <div class="section1" id="parallax">
         <div>
-            <h1 id="section1Title" >Matías Delorenzi</h1>
-            <h2 id="section1Text" >Desarrollador web</h2>
-            <a href="#" id="section1Contact" >Contáctame</a>
+            <h1 class="logo">M | D</h1>
+            <h1 id="section1Title" >¡Hola! Soy Matías, diseño y construyo software</h1>
+            <a href="#para2" id="section1Contact" class="knowMoreAboutMe" >Conozca más de lo que hago</a>
         </div>
     </div>
 
-    <div class="section2">
+    <div class="section2" id="section2">
         <div>
-            <h1 id="aboutMeTitle">Sobre Mi</h1>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam, neque, expedita sunt, minima omnis totam voluptatem eligendi fugit debitis eius at. Blanditiis corporis porro rem aliquid! Ab quaerat, deserunt placeat illo suscipit asperiores consequuntur, dolore aspernatur, dignissimos quis esse iusto error optio nemo consectetur! Alias impedit, molestias non ducimus enim repudiandae beatae similique debitis ex ut ad animi voluptate doloremque aliquam, laudantium delectus, incidunt dolorum fuga. Soluta cum ullam officiis, tempore est unde possimus ipsa. Maxime sequi, ea recusandae hic voluptatum incidunt quam atque maiores libero iure non qui error quasi asperiores fugit officiis quaerat ab cupiditate blanditiis consectetur. Culpa voluptatibus, reprehenderit ut doloremque eum aliquam ipsa minima laborum dicta cumque nobis, dolore possimus explicabo corporis excepturi atque. Ut, incidunt? Laborum aut ut incidunt distinctio. Accusantium distinctio aut deserunt a, nostrum mollitia, ullam commodi totam officia atque assumenda itaque quis consequatur nulla non ipsum dignissimos culpa ad consectetur reprehenderit quia suscipit. Esse cupiditate, quos vel animi ab soluta deleniti fuga odio sint iure, excepturi illo ad architecto quasi labore accusamus maiores! Quo, quae. Eveniet, odit voluptas optio inventore quos non dolore repudiandae sed qui aspernatur quam ipsa soluta ratione accusamus eos in obcaecati. Quae dolorem quia cupiditate eligendi aliquid corrupti.</p>
+            <h1 id="aboutMeTitle">Sobre mi</h1>
+            <div></div>
+            <div class="paragraph">
+                
+                <p id="aboutMePar1">Fascinado por los avances tecnlógicos de las últimas décadas, decidí estudiar Ingeniería en Sistemas de Información en la Universidad 
+                    Tecnológica Nacional (Argentina). Actualmente estoy cursando mi cuarto año, con ganas de expandir mis horizontes y facilitar la vida de las personas a través del desarrollo de software.
+                </p>
+                <p id="aboutMePar2">Me considero capaz de trabajar en equipo de una forma efectiva, aprendiendo rápidamente de mis compañeros y colegas con el fin de
+                    cumplir las metas del grupo.
+                </p>
+                <p id="aboutMePar3">
+                    Trabajar con un desarrollador de software no es simplemente tener a disposición otro par de manos, sino una nueva perspectiva para 
+                    encontrar soluciones novedosas a los problemas del mundo actual.
+
+            </div>
+
             <img src="/public/images/andy.png" alt="">
         </div>
     </div>
@@ -50,10 +62,11 @@
         <button class="project1">Project 1</button>
         <button class="project2">Project 2</button>
         <button class="project3">Project 3</button>
-        <a href="#" class="showMore" id="showMore">Mostrar más</a>     
+        <a href="/projects.html" class="showMore" id="showMore" type="button" >Más</a>
+        
     </div>
 
-    <div class="section4">
+    <div class="section4" id="section4">
         <div>
             <h1 id="contactTitle" class="contact-title">¿Como puedo ayudarle?</h1>
             <h3 id="contactTimeResponse" class="contact-response">¿Tiene alguna pregunta o está interesado en trabajar conmigo? Por favor, complete el formulario a continuación y responderé en las próximas 24 horas.</h3>
@@ -71,16 +84,29 @@
             </form>
         </div>
         <br>
-        <div class="social-media">
-            <h1 class="social-title">Mis redes sociales</h1>
+        <div class="social-media" id="social-media">
+            <div>
+                <h1 id="socialTitle">Conocer más</h1>
+            </div>
+            
             <br>
-            <ul class="social-list">
-                <li><a href="#"><i class="fab fa-linkedin-in fa-3x"></i></a></li>
-                <li><a href="#"><i class="fab fa-github fa-3x"></i></a></li>
-                <li><a href="#"><i class="fab fa-instagram fa-3x"></i></a></li>             
-                <li><a href="#"><i class="fab fa-facebook-f fa-3x"></i></a></li>
-                <li><a href="#"></a></li>
-            </ul>
+            <div class="social-menu">
+                <ul>
+                    <li><a href="https://www.linkedin.com/in/matias-delorenzi/"><i class="fa fa-linkedin"></i></a></li>
+                    <li><a href="https://github.com/MatiasDelorenzi"><i class="fa fa-github"></i></a></li>
+                    <li><a href="https://www.instagram.com/matias.delorenzi/?hl=es-la"><i class="fa fa-instagram"></i></a></li>             
+                    <li><a href="/public/files/cv.pdf" download="Currículum - Delorenzi Matías" id="resumeDownload"><i class="fa fa-file-download"></i></a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="extraInfo">
+            <h3><i class="far fa-envelope"></i> matiasdelorenzi1997@gmail.com</h3>
+            <h3><i class="fa fa-whatsapp"></i> +54 9 2346 554933</h3>
+
+        </div>
+
+        <div class="footer">
+            <p id="foot"><i class="far fa-copyright"></i> Copyrigth 2021 - Matías Delorenzi - Programador Web</p>
         </div>
         
         
